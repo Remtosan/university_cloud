@@ -1583,3 +1583,335 @@ Stack Trace:
 2018-07-03 19:58:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2018-07-03 20:01:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2018-07-03 21:57:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:44:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:44:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:44:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:45:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:45:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:45:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:51:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 15:51:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:37:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:37:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Universities could not be found.
+Exception Attributes: array (
+  'class' => 'Universities',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /Universities/getAll
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/jesusgonzalez/Full_Projects/University_Cloud_1/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-07-12 17:40:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:40:04 Error: getAllData
+2018-07-12 17:40:04 Error: getAll
+2018-07-12 17:43:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:43:28 Error: getAllData
+2018-07-12 17:43:28 Error: getAll
+2018-07-12 17:43:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:43:52 Error: getAllData
+2018-07-12 17:43:52 Error: getAll
+2018-07-12 17:44:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:44:15 Error: getAllData
+2018-07-12 17:44:15 Error: getAll
+2018-07-12 17:45:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:45:16 Error: getAllData
+2018-07-12 17:45:16 Error: getAll
+2018-07-12 17:47:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:48:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:48:05 Error: getAllData
+2018-07-12 17:48:05 Error: getAll
+2018-07-12 17:50:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:51:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 17:51:40 Error: getAllData
+2018-07-12 17:51:40 Error: getAll
+2018-07-12 18:00:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:02:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:04:09 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:04:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:05:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:12:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:12:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:13:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:13:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:13:39 Error: getById
+2018-07-12 18:13:39 Error: getById
+2018-07-12 18:14:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:16:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:18:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:18:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:18:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:22:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:25:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:25:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:26:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:26:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:26:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:28:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:31:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:37:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:40:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:43:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:43:27 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:43:27 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:43:27 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:43:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:43:30 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:43:30 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:43:30 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:44:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:44:07 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:44:07 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:44:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:44:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:44:36 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:44:36 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:44:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:44:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:44:36 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:44:36 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:44:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:44:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:44:36 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:44:36 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:44:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:44:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:44:36 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:44:36 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:44:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:45:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:45:29 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:45:29 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:45:29 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:45:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:45:31 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:45:31 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:45:31 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Referer URL: http://localhost/university_web/
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:47:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:47:37 Error: Fatal Error (4): syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in [/home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php, line 66]
+Request URL: /University/getAll
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-07-12 18:47:37 Warning: Headers already sent in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php:66
+2018-07-12 18:47:37 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '1' (T_LNUMBER), expecting variable (T_VARIABLE) in /home/jesusgonzalez/Full_Projects/University_Cloud_1/src/Controller/UniversityController.php on line 66
+Request URL: /University/getAll
+Stack Trace:
+#0 /home/jesusgonzalez/Full_Projects/University_Cloud_1/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/jesusgonz...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-07-12 18:48:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:48:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:50:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:51:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:52:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:53:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:53:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:58:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:59:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 18:59:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:00:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:00:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:00:40 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:01:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:04:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:05:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:05:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:05:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:13:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:22:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:23:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:39:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:40:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:45:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:46:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:46:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 19:46:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:13:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:17:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:18:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:19:49 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:20:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:20:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:28:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:28:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:29:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:30:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:31:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:31:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:32:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-07-12 21:32:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.

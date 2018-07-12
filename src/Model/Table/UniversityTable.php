@@ -11,14 +11,14 @@ namespace App\Model\Table;
 
 use Cake\ORM\Table;
 
-class lolTable extends Table
+class UniversityTable extends Table
 {
     public function initialize(array $config)
     {
         parent::initialize($config);
 
-        $this->setTable('lol');
+        $this->setTable('Universities');
 
-        $this->setPrimaryKey('CI');
+        $this->setPrimaryKey('University_ID');
     }
-}
+}       

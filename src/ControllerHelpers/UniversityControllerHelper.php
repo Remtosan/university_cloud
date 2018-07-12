@@ -16,7 +16,7 @@ use Cake\ORM\Table;
 use Cake\ORM\TableRegistry;
 use DateTime;
 
-class LolControllerHelper
+class UniversityControllerHelper
 {
     private $GE3PController;
     function __construct(GE3PController $GE3PController)
@@ -28,13 +28,13 @@ class LolControllerHelper
     {
         $result = null;
         try {
-            $lolTable = TableRegistry::get("lol");
-            $queryResult = $lolTable->find();
+            $universitiesTable = TableRegistry::get("Universities");
+            $queryResult = $universitiesTable->find();
 
             if (!$this->GE3PController->isTheCursorEmpty($queryResult)) {
                 $result = $queryResult->toArray();
             } else {
-                throw new \Exception("No lol found");
+                throw new \Exception("No Universities found");
             }
         } catch (\Exception $e) {
             Log::info("Error en " . __FUNCTION__ . " cause: " . $e->getMessage());
@@ -45,19 +45,19 @@ class LolControllerHelper
     }
 
 
-    public function getById($CI)
+    public function getById($ID)
     {
         $result = null;
         try {
 
-            $lolTable = TableRegistry::get("lol");
-            $queryResult = $lolTable->find()
-                ->where(array('CI' => $CI));
+            $universitiesTable = TableRegistry::get("Universities");
+            $queryResult = $universitiesTable->find()
+                ->where(array('University_ID' => $ID));
 
             if (!$this->GE3PController->isTheCursorEmpty($queryResult)) {
                 $result = $queryResult->toArray();
             } else {
-                throw new \Exception("No CI found");
+                throw new \Exception("No ID found");
             }
         } catch (\Exception $e) {
             Log::info("Error en " . __FUNCTION__ . " cause: " . $e->getMessage());
@@ -67,18 +67,20 @@ class LolControllerHelper
         return $result;
     }
 
-    public function addUser($object)
+    public function addUniversity($object)
     {
         try
         {
-            $lolsTable = TableRegistry::get("lol");
-            $LolObject = $lolsTable->newEntity();
-            $LolObject->CI = $object['id'];
-            $LolObject->FirstName = $object['firstname'];
-            $LolObject->LastName = $object['lastname'];
-            $LolObject->Age = $object['age'];
+            $universitiesTable = TableRegistry::get("Universities");
+            $universityObject = $universitiesTable->newEntity();
 
-            $savedObject = $lolsTable->save($LolObject);
+            if(isset($object['University_ID']))
+            {
+                $universityObject->University_ID = $object['University_ID'];
+            }
+            $universityObject->University_Name = $object['University_Name'];
+
+            $savedObject = $universitiesTable->save($universityObject);
             return $savedObject;
 
         } catch (\Exception $e) {
@@ -88,12 +90,12 @@ class LolControllerHelper
         }
     }
 
-    public function deleteUser($id)
+    public function deleteUniversity($id)
     {
         try
         {
-            $lolsTable = TableRegistry::get("lol");
-            $lolsTable->deleteAll(array("CI" => $id));
+            $universitiesTable = TableRegistry::get("Universities");
+            $universitiesTable->deleteAll(array("University_ID" => $id));
             return true;
 
         } catch (\Exception $e) {

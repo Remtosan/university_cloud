@@ -8,12 +8,12 @@
 
 namespace App\Controller;
 
-use App\ControllerHelpers\LolControllerHelper;
+use App\ControllerHelpers\UniversityControllerHelper;
 use Cake\Log\Log;
 
-define("LOL_CONTROLLER_NAME_SPACE", "Lol");
+define("UNIVERSITY_CONTROLLER_NAME_SPACE", "Universities");
 
-class LolController extends GE3PController
+class UniversityController extends GE3PController
 {
     public function getAll()
     {
@@ -21,14 +21,14 @@ class LolController extends GE3PController
         try {
             //Variables esperadas por el servicio
             $arrayToBeTested = array();
-            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, LOL_CONTROLLER_NAME_SPACE, __FUNCTION__);
+            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, UNIVERSITY_CONTROLLER_NAME_SPACE, __FUNCTION__);
             if (parent::isASuccessfulResult($result[WEB_SERVICE_RESPONSE_SIGNATURE])) {
 
-                $lolControllerHelper = new LolControllerHelper($this);
+                $universityControllerHelper = new UniversityControllerHelper($this);
 
-                $lols = $lolControllerHelper->getAllData();
+                $uny = $universityControllerHelper->getAllData();
 
-                $result = parent::setSuccessfulResponseWithObject($result, $lols);
+                $result = parent::setSuccessfulResponseWithObject($result, $uny);
             }
         } catch (\Exception $e) {
             Log::info("Error, " . __FUNCTION__ . " cause: " . $e->getMessage());
@@ -43,17 +43,17 @@ class LolController extends GE3PController
         $result = null;
         try {
             //Variables esperadas por el servicio
-            $arrayToBeTested = array('CI');
-            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, LOL_CONTROLLER_NAME_SPACE, __FUNCTION__);
+            $arrayToBeTested = array('University_ID');
+            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, UNIVERSITY_CONTROLLER_NAME_SPACE, __FUNCTION__);
             if (parent::isASuccessfulResult($result[WEB_SERVICE_RESPONSE_SIGNATURE])) {
 
                 $jsonObject = $result[WEB_SERVICE_RESPONSE_SIGNATURE]['object'];
 
-                $LolControllerHelper = new LolControllerHelper($this);
+                $UniversityControllerHelper = new UniversityControllerHelper($this);
 
-                $ci = $LolControllerHelper->getById($jsonObject['CI']);
+                $id = $UniversityControllerHelper->getById($jsonObject['University_ID']);
 
-                $result = parent::setSuccessfulResponseWithObject($result, $ci);
+                $result = parent::setSuccessfulResponseWithObject($result, $id);
             }
         } catch (\Exception $e) {
             Log::info("Error, " . __FUNCTION__ . " cause: " . $e->getMessage());
@@ -63,20 +63,20 @@ class LolController extends GE3PController
         parent::returnAJson($result);
     }
 
-    public function addUser()
+    public function addUniversity()
     {
         $result = null;
         try {
             //Variables esperadas por el servicio
-            $arrayToBeTested = array('firstname', 'lastname','age','id');
-            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, LOL_CONTROLLER_NAME_SPACE, __FUNCTION__);
+            $arrayToBeTested = array('University_Name');
+            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, UNIVERSITY_CONTROLLER_NAME_SPACE, __FUNCTION__);
             if (parent::isASuccessfulResult($result[WEB_SERVICE_RESPONSE_SIGNATURE])) {
 
                 $jsonObject = $result[WEB_SERVICE_RESPONSE_SIGNATURE]['object'];
 
-                $LolControllerHelper = new LolControllerHelper($this);
+                $UniversityControllerHelper = new UniversityControllerHelper($this);
 
-                $newuser = $LolControllerHelper->addUser($jsonObject);
+                $newuser = $UniversityControllerHelper->addUniversity($jsonObject);
                 $result = parent::setSuccessfulSaveResponseWithObject($result, $newuser);
             }
         } catch (\Exception $e) {
@@ -87,20 +87,21 @@ class LolController extends GE3PController
         parent::returnAJson($result);
     }
 
-    public function deleteUser()
+
+    public function deleteUniversity()
     {
         $result = null;
         try {
             //Variables esperadas por el servicio
-            $arrayToBeTested = array('id');
-            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, LOL_CONTROLLER_NAME_SPACE, __FUNCTION__);
+            $arrayToBeTested = array('University_ID');
+            $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, UNIVERSITY_CONTROLLER_NAME_SPACE, __FUNCTION__);
             if (parent::isASuccessfulResult($result[WEB_SERVICE_RESPONSE_SIGNATURE])) {
 
                 $jsonObject = $result[WEB_SERVICE_RESPONSE_SIGNATURE]['object'];
 
-                $LolControllerHelper = new LolControllerHelper($this);
+                $UniversityControllerHelper = new UniversityControllerHelper($this);
 
-                if($LolControllerHelper->deleteUser($jsonObject['id']))
+                if($UniversityControllerHelper->deleteUniversity($jsonObject['University_ID']))
                 {
                     $code = 0;
                     $message = "DELETED SUCCESSFULLY";
