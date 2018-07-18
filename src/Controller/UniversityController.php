@@ -68,7 +68,7 @@ class UniversityController extends GE3PController
         $result = null;
         try {
             //Variables esperadas por el servicio
-            $arrayToBeTested = array('University_Name');
+            $arrayToBeTested = array('University_Name','Careers');
             $result = parent::runWebServiceInitialConfAndValidations($arrayToBeTested, UNIVERSITY_CONTROLLER_NAME_SPACE, __FUNCTION__);
             if (parent::isASuccessfulResult($result[WEB_SERVICE_RESPONSE_SIGNATURE])) {
 
@@ -76,8 +76,13 @@ class UniversityController extends GE3PController
 
                 $UniversityControllerHelper = new UniversityControllerHelper($this);
 
-                $newuser = $UniversityControllerHelper->addUniversity($jsonObject);
-                $result = parent::setSuccessfulSaveResponseWithObject($result, $newuser);
+                $newUniversity = $UniversityControllerHelper->addUniversity($jsonObject);
+
+                Log::debug("UNIVERSIDAD: " .json_encode($newUniversity));
+
+                $this->addCareerToUniversity($jsonObject['Careers'], $newUniversity['University_ID']);
+
+                $result = parent::setSuccessfulSaveResponseWithObject($result, $newUniversity);
             }
         } catch (\Exception $e) {
             Log::info("Error, " . __FUNCTION__ . " cause: " . $e->getMessage());
@@ -114,6 +119,16 @@ class UniversityController extends GE3PController
             $result = parent::setExceptionResponse($result, $e);
         }
         parent::returnAJson($result);
+    }
+
+
+    private function addCareerToUniversity ($careers, $universityId)
+    {
+        $UniversityControllerHelper = new UniversityControllerHelper($this);
+                foreach ($careers as $id)
+                {
+                    $UniversityControllerHelper->addCareerToUniversity($id, $universityId);
+                }
     }
 
 
